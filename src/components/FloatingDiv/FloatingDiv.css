@@ -1,0 +1,42 @@
+.floatingdiv{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    background: white;
+    box-sizing: var(--boxShadow);
+    border-radius: 17px;
+    padding: 0px 28px 0px 0px;
+    height: 4.5rem;
+}
+
+.floatingdiv>img{
+    transform: scale(0.4);
+}
+
+.floatingdiv>span{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+@media screen and (max-width: 280px) {
+    .floatingdiv > img{
+        transform: scale(0.3);
+    }
+
+    .floatingdiv > span{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .floatingdiv{
+        background: rgb(232, 228, 228);
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .floatingdiv{
+        transform: scale(0.8);
+    }
+}

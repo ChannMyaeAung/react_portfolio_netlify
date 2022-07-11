@@ -1,0 +1,164 @@
+.services{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 13rem;
+    margin-top: 9rem;
+}
+
+.awesome{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 0.5rem;
+}
+
+.awesome > :nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.awesome > :nth-child(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.awesome > :nth-child(3){
+    line-height: 28px;
+}
+
+.s-button{
+    margin-top: 1rem;
+    width: 8rem;
+    height: 2rem;
+}
+
+.s-blur1{
+    top: 13rem;
+    left: -18rem;
+}
+
+.cards{
+    position: relative;
+}
+
+.cards>*{
+    position: absolute;
+}
+
+.s-blur2{
+    top: 8rem;
+    left: 14rem;
+}
+
+@media screen and (max-width: 350px){
+    .awesome span:nth-of-type(1){
+        font-size: 1.5rem;
+    }
+
+    .awesome span:nth-of-type(2){
+        font-size: 1.5rem;
+    }
+
+    .awesome span:nth-of-type(3){
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+    }
+
+    .cards > * {
+        position: static;
+    }
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 590px){
+    .services{
+        margin-top: 5rem;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+    }
+
+    .cards > * {
+        position: static;
+    }
+}
+
+@media screen and (min-width: 599px) and (max-width: 700px){
+    .services{
+        padding: 0;
+        gap: 3rem;
+        flex-direction: column;
+        height: 50rem;
+    }
+
+    .awesome{
+        gap: 5px;
+    }
+
+   .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 17rem;
+    }
+
+    .cards > * {
+        position: static;
+    }
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 1200px){
+
+    .services{
+        padding: 0;
+        gap: 1rem;
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .awesome{
+        width: 100%;
+    }
+
+    .awesome > :nth-child(1){
+        font-size: 28px;
+    }
+
+    .awesome > :nth-child(2){
+        font-size: 30px;
+    }
+
+    .awesome > :nth-child(3){
+        font-size: 16px;
+    }
+
+    .cards > :nth-child(2){
+        left: -2rem!important;
+    }
+ 
+}
